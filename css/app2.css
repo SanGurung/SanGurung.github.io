@@ -1,0 +1,30 @@
+.hamburgerMenu {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.hamburgerMenuBar1, .hamburgerMenuBar2, .hamburgerMenuBar3 {
+    width: 20px;
+    height: 2px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.noHamburger .hamburgerMenuBar1 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 3px);
+    transform: rotate(-45deg) translate(-5px, 3px);
+}
+
+.noHamburger .hamburgerMenuBar2 {opacity: 0;}
+
+.noHamburger .hamburgerMenuBar3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -4px);
+    transform: rotate(45deg) translate(-5px, -4px);
+}
+
+@media screen and (max-width: 39.9375em) {
+  .burgerEffect {
+    display: none;
+  }
+}
